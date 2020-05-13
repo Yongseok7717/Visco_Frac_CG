@@ -5,6 +5,9 @@ Code implementations deal with simple wave equations, elastic problems, vicoelas
 Numerical schemes are based on *spatial finite element methods*(CG/DG) and *Crank-Nicolson method* for time discretisation.
 
 
+In this numerical experiments, we consider two examples to observe *suboptimal* errors and *optimal* errors with respect to time (we take into account $H^2$ and $H^3$ exact solutions). For numerical approaches of fractional integration, a **linear interpolation technique** is employed and gives second order accurracy.
+
+
 All codes are constructed in Python 2.7.12 and FEniCS(dolfin) 2016.2.0.
 
 
