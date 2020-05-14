@@ -9,6 +9,10 @@ In this numerical experiments, we consider two examples to observe *suboptimal* 
 
 
 All codes are constructed in Python 2.7.12 and FEniCS(dolfin) 2016.2.0.
+- **homo_nonsmooth_cg.py**: Solve the less smooth problem to show suboptimal results.
+- **homo_smooth_cg_modi.py**: Solve the $H^3$ regular problem to show optimal results.
+- **CG_fraphi_frac.py**: Illustrate graphs of numerical errors on *log-log* scale when $h\approx\Delta t$.
+- **main.sh**: Main task to run (consider both examples with linear polinomial basis as well as quadratic).
 
 
 If you have any inquires, please contact me at email yongseok.jang@brunel.ac.uk or yongseok20007717@gmail.com.
