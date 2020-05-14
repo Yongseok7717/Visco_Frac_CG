@@ -208,7 +208,7 @@ elif k==2:
     np.savetxt("L2_error_quad.txt",L2_error,fmt="%2.3e")
 
 #Print error tables
-'''
+
 # SS altered the following loop limits
 #print(V_error)
 print ('H1 error')
@@ -241,7 +241,7 @@ for i in range(iMin,iMax):
       print('& %11.4le ' % L2_error[i-iMin+1,j-jMin+1], end="")
   print(' \\\\')
 print('\\hline\\end{tabular}')
-
+'''
 l2Diag=[]
 h1Diag=[]
 m= min(iMax-iMin,jMax-jMin)
