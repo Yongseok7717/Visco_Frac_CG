@@ -8,6 +8,8 @@ Numerical schemes are based on *spatial finite element methods*(CG/DG) and *Cran
 In this numerical experiments, we consider two examples to observe *suboptimal* errors and *optimal* errors with respect to time (we take into account $H^2$ and $H^3$ exact solutions). For numerical approaches of fractional integration, a **linear interpolation technique** is employed and gives second order accurracy.
 
 
+For more details of the model problem, see **ModelProblem.pdf** or **ModelProblem.html**.
+
 All codes are constructed in Python 2.7.12 and FEniCS(dolfin) 2016.2.0.
 - **homo_nonsmooth_cg.py**: Solve the less smooth problem to show suboptimal results.
 - **homo_smooth_cg_modi.py**: Solve the $H^3$ regular problem to show optimal results.
