@@ -130,7 +130,7 @@ for i in range(iMin,iMax):
         Nh=pow(2,i)
         Nt=2**j
         dt=T/Nt #time step size
-        n0=(T/8/dt)
+        
         print(' degree of poly = %d, i = %d (to %d), ; j = %d (to %d)' % (k, i, iMax-1,  j, jMax-1))
         mesh=UnitSquareMesh(Nh, Nh) #unit square
         V=VectorFunctionSpace(mesh,'CG',k)  #Define test function space
@@ -171,7 +171,7 @@ for i in range(iMin,iMax):
             return S
         
         b = None
-        for nt in range(0,int(n0)):
+        for nt in range(0,Nt):
             #Update exact solution and source terms with respect to given time
             tn=(nt+1.0)*dt;th=(nt)*dt;
             ux.utn=0.5*(uTime(tn)+uTime(th));
