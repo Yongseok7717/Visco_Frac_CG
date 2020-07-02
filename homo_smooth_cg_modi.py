@@ -242,8 +242,7 @@ for i in range(iMin,iMax):
   print(' \\\\')
 print('\\hline\\end{tabular}')
 
-np.savetxt("energy_error.txt",V_error,fmt="%2.3e")
-np.savetxt("L2_error_linear.txt",L2_error,fmt="%2.3e")
+
 '''
 l2Diag=[]
 h1Diag=[]
